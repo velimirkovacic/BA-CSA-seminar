@@ -1,0 +1,71 @@
+\documentclass[times, utf8, seminar]{fer}
+\usepackage{booktabs}
+\usepackage{booktabs}
+\usepackage{pdfpages}
+\usepackage{braket}
+\usepackage[inkscapeformat=png]{svg}
+\usepackage{subcaption}
+\usepackage[qm]{qcircuit}
+\usepackage{graphicx}
+\usepackage[noend]{algpseudocode}
+\usepackage{algorithm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{makecell}
+\usepackage{tabularx}
+\usepackage{cellspace}
+\usepackage{graphicx}
+\usepackage{array, tabularx, caption, boldline}
+\usepackage{framed}
+
+\usepackage{courier}
+\usepackage{url}
+\usepackage[pdfa, hidelinks]{hyperref}
+
+\def\UrlBreaks{\do\/\do-}
+\setcitestyle{numbers,square,super}
+\hypersetup{
+	citecolor=black
+}
+\newfloat{Kod}
+\captionsetup{Kod}
+
+\newfloat{Ispis}
+\captionsetup{Ispis}
+
+\begin{document}
+	
+	% TODO: Navedite naslov rada.
+	\title{Algoritam šišmiša i algoritam kukavičjeg pretraživanja}
+	
+	% TODO: Navedite svoje ime i prezime.
+	\author{Velimir Kovačić}
+	
+	% TODO: Navedite ime i prezime mentora.
+	\voditelj{Marin Golub}
+	
+	\maketitle
+	
+	\tableofcontents
+	
+	\chapter{Uvod}
+	\input{uvod}
+
+	\chapter{Algoritam šišmiša}
+	\input{sismisi}
+	
+	\chapter{Algoritam kukavičjeg pretraživanja}
+	\input{kukavica}
+	
+	\chapter{Zaključak}
+	\input{zakljucak}
+	
+	\bibliography{literatura}
+	\bibliographystyle{fer}
+	\nocite{*}
+	
+	\chapter{Sažetak}
+	\hspace{0.5cm}Algoritam šišmiša i algoritam kukavica metaheuristički su optimizacijski algoritmi nadahnuti procesima iz prirode. U ovom radu dan je pregled samih algoritama, načini na koje se mogu izvesti na računalu i njihove primjene.
+	
+\end{document}
